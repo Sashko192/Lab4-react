@@ -1,0 +1,33 @@
+/* Загальний контейнер для сторінки профілю */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Повна висота вікна браузера */
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Градієнтний фон */
+  }
+  
+  /* Контейнер для вмісту профілю */
+  .profile-content {
+    background-color: #ffffff; /* Білий фон для контенту */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для об'єму */
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Заголовок профілю */
+  .profile-content h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  /* Основний текст профілю */
+  .profile-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+  }
+  

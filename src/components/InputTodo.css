@@ -1,0 +1,46 @@
+.form-container {
+    display: flex;                
+    justify-content:center;   
+    margin: 40px;                 
+    padding: 20px;                /* Внутрішні відступи */
+    background-color: #ffffff;    /* Легкий фон для контейнера */
+    border-radius: 10px;          /* Більш закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для легкого ефекту плаваючої форми */
+}
+
+.input-text {
+    width: 270px;                 /* Збільшено ширину для зручнішого введення */
+    padding: 12px;                /* Більші внутрішні відступи */
+    border: 1px solid #000000;       /* Світло-сірий контур */
+    border-radius: 40px;           /* Більш закруглені кути */
+    font-size: 16px;              
+    outline: none;                /* Без рамки при фокусі */
+    transition: border-color 0.3s;/* Плавна зміна кольору контуру при фокусі */
+}
+
+.input-text:focus {
+    border-color: #000000;        /* Зелений контур при фокусі */
+}
+
+.input-submit {
+    padding: 12px 20px;           /* Більші внутрішні відступи */
+    margin-left: 10px;            
+    border: none;                 
+    border-radius: 8px;           /* Більш закруглені кути */
+    background-color: #000000;    
+    color: white;                 
+    font-size: 16px;              
+    cursor: pointer;              
+    transition: background-color 0.3s, transform 0.2s; /* Додаємо анімацію на натискання */
+}
+
+.input-submit:hover {
+    background-color: #fdfffd;  
+    color:#000000;  
+    transform: scale(1.05);       /* Легке збільшення при наведенні */
+}
+
+.input-submit:active {
+    background-color: #3e8e41;    /* Темніший зелений при натисканні */
+    transform: scale(0.98);       /* Легке зменшення при натисканні */
+}

@@ -1,0 +1,79 @@
+/* Загальний стиль для сторінки входу */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Градієнтний фон */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Форма входу */
+.login-form {
+    background-color: #ffffff; /* Білий фон форми */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* М'яка тінь */
+    padding: 40px 30px;
+    width: 320px;
+    max-width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-form:hover {
+    transform: scale(1.03); /* Легке збільшення при наведенні */
+}
+
+/* Заголовок форми */
+.login-form h2 {
+    margin-bottom: 24px;
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Поля вводу */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #6e8efb; /* Виділення кольором при фокусі */
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5); /* Тінь при фокусі */
+}
+
+/* Кнопка входу */
+.login-form button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-form button:hover {
+    background: linear-gradient(135deg, #5c7be0, #9664d6); /* Темніший градієнт */
+    transform: translateY(-3px); /* Плавне підняття при наведенні */
+}
+
+/* Повідомлення про помилку */
+.error-message {
+    color: #ff4d4f; /* Червоний відтінок */
+    font-size: 14px;
+    margin-top: 10px;
+}
